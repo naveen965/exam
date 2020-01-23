@@ -24,6 +24,7 @@ class Home extends StatelessWidget {
         //   //title: Text('Flutter layout demo'),
         // ),
         appBar: AppBar(
+          backgroundColor: Color.fromRGBO(0, 255, 0, 100),
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -59,7 +60,7 @@ class Home extends StatelessWidget {
               );
             },
             child: Text("Click Me"),
-            color: Colors.lightBlue,
+            color: Color.fromRGBO(0, 179, 0, 100),
           ),
         ),
       ),

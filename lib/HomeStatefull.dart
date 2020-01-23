@@ -20,6 +20,7 @@ class _HomeStateState extends State<HomeState> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color.fromRGBO(0, 128, 0, 100),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
@@ -36,21 +37,22 @@ class _HomeStateState extends State<HomeState> {
         ),
       ),
       body: Center(
-        child: Column(
-          children: <Widget>[
-            Text(number.toString()),
-            // RaisedButton(
-            //   child: Text("Click Me"),
-            //   onPressed: () => addNumber(),
-            // ),
-            FloatingActionButton(
-              child: Text("Click"),
-              onPressed: () => addNumber(),
-              backgroundColor: Colors.blue[600],
-              
-            ),
-          ],
-        ),
+        // child: Column(
+        //   children: <Widget>[
+        //     //Text(number.toString()),
+        //     // RaisedButton(
+        //     //   child: Text("Click Me"),
+        //     //   onPressed: () => addNumber(),
+        //     // ),
+        //   ],
+        // ),
+        child: Text(number.toString()),
+      ),
+      floatingActionButton: FloatingActionButton(
+        // child: Text("Click"),
+        // onPressed: () => addNumber(),
+        // backgroundColor: Color.fromRGBO(0, 255, 0, 100),
+        //backgroundColor: Colors.blue[600],
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:exam/HomeStatefull.dart';
+import 'package:exam/MyHomePage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -8,7 +9,7 @@ class Secondpage extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color.fromRGBO(48, 93, 166, 100),
+          backgroundColor: Color.fromRGBO(0, 255, 0, 100),
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
@@ -29,11 +30,11 @@ class Secondpage extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => HomeState()),
+                MaterialPageRoute(builder: (context) => MyHomePage()),
               );
             },
             child: Text("Play"),
-            color: Colors.lightGreen,
+            color: Color.fromRGBO(0, 179, 0, 100),
           ),
         ),
       ),
