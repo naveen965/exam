@@ -1,3 +1,4 @@
+import 'package:exam/HomeStatefull.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -21,6 +22,18 @@ class Secondpage extends StatelessWidget {
                 child: Text("SignUp"),
               )
             ],
+          ),
+        ),
+        body: Center(
+          child: RaisedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomeState()),
+              );
+            },
+            child: Text("Play"),
+            color: Colors.lightGreen,
           ),
         ),
       ),
