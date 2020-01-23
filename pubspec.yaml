@@ -47,6 +47,8 @@ flutter:
   assets:
    - images/home.png
    - images/enrol.png
+   - images/signupicon.png
+   - images/loginicon.png
    - images/0.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

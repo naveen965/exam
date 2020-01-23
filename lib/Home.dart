@@ -1,5 +1,8 @@
+import 'package:exam/Secondpage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+
 
 class Home extends StatelessWidget {
   
@@ -15,10 +18,27 @@ class Home extends StatelessWidget {
       //title: 'Welcome to Flutter',
       //title: 'Flutter layout demo',
       home: Scaffold(
+        // appBar: AppBar(
+        //   //title: Image.asset('assets/home.png', fit: BoxFit.cover)
+        //   title: Text('First App'),
+        //   //title: Text('Flutter layout demo'),
+        // ),
         appBar: AppBar(
-          title: Image.asset('assets/home.png', fit: BoxFit.cover)
-          //title: Text('First App'),
-          //title: Text('Flutter layout demo'),
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Image.asset(
+                'images/home.png',
+                fit: BoxFit.contain,
+                height: 32,
+              ),
+              Container(
+                padding: const EdgeInsets.all(8.0), 
+                child: Text('Home')
+              )
+            ],
+
+          ),
         ),
         body: Center(
           // child: Column(
@@ -32,7 +52,12 @@ class Home extends StatelessWidget {
           //   ],
           // ),
           child: RaisedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Secondpage()),
+              );
+            },
             child: Text("Click Me"),
             color: Colors.lightBlue,
           ),
