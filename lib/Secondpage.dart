@@ -26,15 +26,29 @@ class Secondpage extends StatelessWidget {
           ),
         ),
         body: Center(
-          child: RaisedButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) => MyHomePage()),
-              );
-            },
-            child: Text("Play"),
-            color: Color.fromRGBO(0, 179, 0, 100),
+          child: Column(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeState()),
+                  );
+                },
+                child: Text('Play'),
+                color: Colors.lightBlue,
+              ),
+              RaisedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => MyHomePage()),
+                  );
+                },
+                child: Text('Camera'),
+                color: Color.fromRGBO(0, 179, 0, 100),
+              ),
+            ],            
           ),
         ),
       ),

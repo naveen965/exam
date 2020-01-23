@@ -49,9 +49,9 @@ class _HomeStateState extends State<HomeState> {
         child: Text(number.toString()),
       ),
       floatingActionButton: FloatingActionButton(
-        // child: Text("Click"),
-        // onPressed: () => addNumber(),
-        // backgroundColor: Color.fromRGBO(0, 255, 0, 100),
+        child: Text("Click"),
+        onPressed: () => addNumber(),
+        backgroundColor: Color.fromRGBO(0, 255, 0, 100),
         //backgroundColor: Colors.blue[600],
       ),
     );
